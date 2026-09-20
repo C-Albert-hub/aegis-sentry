@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/canvas_light">
+
+    <!-- ============================================================= -->
+    <!-- Header: title + summary + compact score ring                  -->
+    <!-- ============================================================= -->
+    <LinearLayout
+        android:id="@+id/resultHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/results_title"
+                android:textColor="@color/ink_primary"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/resultSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/ink_secondary"
+                android:textSize="13sp"
+                tools:text="Overall security score" />
+        </LinearLayout>
+
+        <dev.m4c4r0n1.aegis.CircleProgressView
+            android:id="@+id/resultScoreRing"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="12dp"
+            app:cpvCompact="true"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <!-- ============================================================= -->
+    <!-- Module chips (horizontal scroll)                              -->
+    <!-- Each chip carries a status dot; ResultsFragment tints it by   -->
+    <!-- the module's worst finding so the user can see at a glance    -->
+    <!-- which tab needs attention.                                    -->
+    <!-- ============================================================= -->
+    <HorizontalScrollView
+        android:id="@+id/moduleScroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/canvas_light"
+        android:clipToPadding="false"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="4dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resultHeader">
+
+        <LinearLayout
+            android:id="@+id/moduleButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/moduleEnvironment"
+                style="@style/Widget.Awesome.ModuleChip"
+                android:text="@string/module_environment" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/moduleAntiDebug"
+                style="@style/Widget.Awesome.ModuleChip"
+                android:text="@string/module_anti_debug" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/moduleAntiInjection"
+                style="@style/Widget.Awesome.ModuleChip"
+                android:text="@string/module_anti_injection" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/moduleAppIntegrity"
+                style="@style/Widget.Awesome.ModuleChip"
+                android:text="@string/module_app_integrity" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/moduleNativeIntegrity"
+                style="@style/Widget.Awesome.ModuleChip"
+                android:text="@string/module_native_integrity" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- ============================================================= -->
+    <!-- Child fragment container                                      -->
+    <!-- ============================================================= -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/resultFragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moduleScroll" />
+</androidx.constraintlayout.widget.ConstraintLayout>

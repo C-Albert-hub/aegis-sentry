@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/canvas_light">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/mainContent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:layout="@layout/fragment_home"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/bottomNavigation"
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:background="@color/surface_light"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/navigationOverviewButton"
+                style="@style/Widget.Awesome.NavChip"
+                android:text="@string/nav_home"
+                app:icon="@drawable/ic_home" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/navigationResultsButton"
+                style="@style/Widget.Awesome.NavChip"
+                android:text="@string/nav_results"
+                app:icon="@drawable/ic_results" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/navigationSettingsButton"
+                style="@style/Widget.Awesome.NavChip"
+                android:text="@string/nav_settings"
+                app:icon="@drawable/ic_settings" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/themeTransitionOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/canvas_light"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:importantForAccessibility="no"
+            android:src="@mipmap/app_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/app_name"
+            android:textColor="@color/ink_primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/screen_subtitle"
+            android:textColor="@color/ink_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</FrameLayout>

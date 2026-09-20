@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+      Dark theme overlay. We only override the Material color roles; the
+      drawable/layout layer keeps using semantic names like canvas_light
+      and surface_light, which resolve to the dark values in this qualifier.
+    -->
+    <style name="Theme.Awesome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorPrimaryVariant">@color/brand_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/brand_blue</item>
+        <item name="colorSecondaryVariant">@color/brand_blue_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/canvas_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/ink_primary</item>
+        <item name="colorOnSurfaceVariant">@color/ink_secondary</item>
+
+        <item name="android:statusBarColor">@color/canvas_light</item>
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- 同色背景，避免切换闪屏 -->
+        <item name="android:windowBackground">@color/canvas_light</item>
+    </style>
+
+</resources>

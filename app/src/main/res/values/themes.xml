@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Awesome" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/brand_blue</item>
+        <item name="colorPrimaryVariant">@color/brand_blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/brand_blue</item>
+        <item name="colorSecondaryVariant">@color/brand_blue_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="android:colorBackground">@color/canvas_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorOnSurface">@color/ink_primary</item>
+        <item name="colorOnSurfaceVariant">@color/ink_secondary</item>
+
+        <item name="android:statusBarColor">@color/canvas_light</item>
+        <item name="android:navigationBarColor">@color/surface_light</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:windowBackground">@color/canvas_light</item>
+
+        <!-- Snackbar 样式 -->
+        <item name="snackbarStyle">@style/Widget.Awesome.Snackbar</item>
+        <item name="snackbarTextViewStyle">@style/Widget.Awesome.Snackbar.TextView</item>
+    </style>
+
+</resources>

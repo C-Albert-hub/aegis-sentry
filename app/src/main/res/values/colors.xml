@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink_tertiary">#6B7280</color>
+
+    <!-- ============================================================= -->
+    <!-- Brand                                                          -->
+    <!-- ============================================================= -->
+    <color name="brand_blue">#2457D6</color>
+    <color name="brand_blue_dark">#163A91</color>
+    <color name="brand_blue_tint">#1A2457D6</color>
+    <color name="brand_blue_soft">#602457D6</color>
+
+    <!-- ============================================================= -->
+    <!-- Surfaces                                                       -->
+    <!-- ============================================================= -->
+    <color name="canvas_light">#F6F8FC</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_subtle">#F0F3F9</color>
+    <color name="score_surface_light">#EEF2FA</color>
+
+    <!-- ============================================================= -->
+    <!-- Ink                                                            -->
+    <!-- ============================================================= -->
+    <color name="ink_primary">#17243A</color>
+    <color name="ink_secondary">#637089</color>
+    <color name="ink_disabled">#9AA6BC</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- ============================================================= -->
+    <!-- Outline / divider                                              -->
+    <!-- ============================================================= -->
+    <color name="outline_light">#D9E0EC</color>
+    <color name="outline_strong">#C2CDDF</color>
+    <color name="divider">#ECF0F7</color>
+
+    <!-- ============================================================= -->
+    <!-- Status                                                         -->
+    <!-- ============================================================= -->
+    <color name="status_safe">#1F9D68</color>
+    <color name="status_warning">#C78512</color>
+    <color name="status_risk">#C44747</color>
+
+    <color name="status_safe_tint">#1A1F9D68</color>
+    <color name="status_warning_tint">#1AC78512</color>
+    <color name="status_risk_tint">#1AC44747</color>
+
+    <color name="status_safe_dark">#0E6B47</color>
+    <color name="status_warning_dark">#8A5A0C</color>
+    <color name="status_risk_dark">#8B2C2C</color>
+
+    <!-- ============================================================= -->
+    <!-- Module chip (results screen)                                   -->
+    <!-- ============================================================= -->
+    <color name="chip_background">@color/surface_light</color>
+    <color name="chip_stroke">@color/outline_light</color>
+    <color name="chip_text">@color/ink_secondary</color>
+    <color name="chip_text_selected">@color/ink_primary</color>
+    <color name="chip_background_selected">@color/brand_blue_tint</color>
+    <color name="chip_stroke_selected">@color/brand_blue</color>
+    <color name="chip_dot">@color/ink_disabled</color>
+    <color name="chip_dot_safe">@color/status_safe</color>
+    <color name="chip_dot_warning">@color/status_warning</color>
+    <color name="chip_dot_risk">@color/status_risk</color>
+
+    <!-- ============================================================= -->
+    <!-- Bottom navigation chips                                        -->
+    <!-- ============================================================= -->
+    <color name="nav_chip_background">@android:color/transparent</color>
+    <color name="nav_chip_background_selected">@color/brand_blue_tint</color>
+    <color name="nav_chip_icon">@color/ink_secondary</color>
+    <color name="nav_chip_icon_selected">@color/brand_blue</color>
+    <color name="nav_chip_text">@color/ink_secondary</color>
+    <color name="nav_chip_text_selected">@color/brand_blue</color>
+
+</resources>

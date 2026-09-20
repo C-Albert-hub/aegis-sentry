@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================= -->
+    <!-- Surfaces — dark theme overrides                                -->
+    <!-- ============================================================= -->
+    <color name="canvas_light">#0B1220</color>
+    <color name="surface_light">#111A2C</color>
+    <color name="surface_subtle">#182338</color>
+    <color name="score_surface_light">#182338</color>
+
+    <!-- ============================================================= -->
+    <!-- Ink                                                            -->
+    <!-- ============================================================= -->
+    <color name="ink_primary">#E8EEF9</color>
+    <color name="ink_secondary">#94A3B8</color>
+    <color name="ink_disabled">#5A6B85</color>
+
+    <!-- ============================================================= -->
+    <!-- Outline / divider                                              -->
+    <!-- ============================================================= -->
+    <color name="outline_light">#243049</color>
+    <color name="outline_strong">#33445F</color>
+    <color name="divider">#1A2438</color>
+
+    <!-- ============================================================= -->
+    <!-- Brand — slightly brighter on dark for contrast                 -->
+    <!-- ============================================================= -->
+    <color name="brand_blue">#5B8DEF</color>
+    <color name="brand_blue_dark">#3E70D1</color>
+    <color name="brand_blue_tint">#1A5B8DEF</color>
+    <color name="brand_blue_soft">#605B8DEF</color>
+
+    <!-- ============================================================= -->
+    <!-- Status — same hue, brighter for dark surfaces                  -->
+    <!-- ============================================================= -->
+    <color name="status_safe">#34C98B</color>
+    <color name="status_warning">#E5A63C</color>
+    <color name="status_risk">#E56767</color>
+
+    <color name="status_safe_tint">#1A34C98B</color>
+    <color name="status_warning_tint">#1AE5A63C</color>
+    <color name="status_risk_tint">#1AE56767</color>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============================================================= -->
+    <!-- Spacing (4dp base scale)                                      -->
+    <!-- ============================================================= -->
+    <dimen name="space_xxs">2dp</dimen>
+    <dimen name="space_xs">4dp</dimen>
+    <dimen name="space_sm">8dp</dimen>
+    <dimen name="space_md">12dp</dimen>
+    <dimen name="space_lg">16dp</dimen>
+    <dimen name="space_xl">20dp</dimen>
+    <dimen name="space_xxl">24dp</dimen>
+    <dimen name="space_xxxl">32dp</dimen>
+
+    <!-- Page-level padding -->
+    <dimen name="screen_padding_horizontal">20dp</dimen>
+    <dimen name="screen_padding_top">24dp</dimen>
+    <dimen name="screen_padding_bottom">32dp</dimen>
+
+    <!-- ============================================================= -->
+    <!-- Corner radius                                                 -->
+    <!-- ============================================================= -->
+    <dimen name="radius_xs">8dp</dimen>        <!-- small chip / badge -->
+    <dimen name="radius_sm">12dp</dimen>       <!-- evidence card -->
+    <dimen name="radius_md">16dp</dimen>       <!-- main card -->
+    <dimen name="radius_lg">20dp</dimen>       <!-- hero card -->
+    <dimen name="radius_pill">999dp</dimen>    <!-- chip pill -->
+
+    <!-- ============================================================= -->
+    <!-- Typography (sp)  — scaled up ~1.15x                           -->
+    <!-- ============================================================= -->
+    <dimen name="text_display">36sp</dimen>    <!-- large numeric (score) -->
+    <dimen name="text_headline">28sp</dimen>   <!-- page title -->
+    <dimen name="text_title">18sp</dimen>      <!-- card title / status -->
+    <dimen name="text_subtitle">17sp</dimen>   <!-- emphasized body -->
+    <dimen name="text_body">16sp</dimen>       <!-- default body -->
+    <dimen name="text_body_sm">15sp</dimen>    <!-- secondary body -->
+    <dimen name="text_caption">14sp</dimen>    <!-- helper text -->
+    <dimen name="text_overline">13sp</dimen>   <!-- ALL CAPS label -->
+
+    <!-- ============================================================= -->
+    <!-- Controls                                                      -->
+    <!-- ============================================================= -->
+    <dimen name="button_height">56dp</dimen>       <!-- primary button -->
+    <dimen name="button_height_sm">40dp</dimen>    <!-- chip -->
+    <dimen name="nav_height">72dp</dimen>
+    <dimen name="touch_target_min">48dp</dimen>
+    <dimen name="icon_button_size">44dp</dimen>    <!-- back button -->
+
+    <!-- ============================================================= -->
+    <!-- Stroke                                                        -->
+    <!-- ============================================================= -->
+    <dimen name="stroke_hairline">1dp</dimen>
+    <dimen name="stroke_thin">1.5dp</dimen>
+
+    <!-- ============================================================= -->
+    <!-- Icons                                                         -->
+    <!-- ============================================================= -->
+    <dimen name="icon_xs">10dp</dimen>   <!-- status dot -->
+    <dimen name="icon_sm">16dp</dimen>   <!-- inline -->
+    <dimen name="icon_md">20dp</dimen>   <!-- button / chip -->
+    <dimen name="icon_lg">24dp</dimen>   <!-- nav bar -->
+    <dimen name="icon_xl">32dp</dimen>   <!-- decorative -->
+
+    <!-- ============================================================= -->
+    <!-- Component-specific                                            -->
+    <!-- ============================================================= -->
+    <dimen name="score_ring_size">180dp</dimen>
+    <dimen name="score_ring_compact_size">80dp</dimen>
+    <dimen name="nav_chip_horizontal_margin">6dp</dimen>
+    <dimen name="chip_spacing">8dp</dimen>
+    <dimen name="evidence_card_spacing">6dp</dimen>
+    <dimen name="divider_indent">16dp</dimen>
+
+</resources>
